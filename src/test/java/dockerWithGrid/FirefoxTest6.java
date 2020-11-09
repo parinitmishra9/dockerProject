@@ -7,12 +7,12 @@ import org.testng.annotations.Test;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class OperaTest5 {
+public class FirefoxTest6 {
 
     @Test
     public void test5() throws MalformedURLException {
 
-        DesiredCapabilities desiredCapabilities = DesiredCapabilities.operaBlink();
+        DesiredCapabilities desiredCapabilities = DesiredCapabilities.firefox();
 
         URL url = new URL("http://localhost:4444/wd/hub");
 
@@ -20,7 +20,7 @@ public class OperaTest5 {
 
         driver.get("https://amazon.com/");
 
-        System.out.println("Title 5: " + driver.getTitle());
+        System.out.println("Title 4: " + driver.getTitle());
 
         driver.quit();
     }
